@@ -1,7 +1,9 @@
 function Link(props) {
-  console.log(props)
+  // console.log(props)
   return (
-    <a className={props.classe} href={props.destino}>{props.texto}</a>
+    <a className={props.classe} href={props.destino}>
+      {props.texto}
+    </a>
   )
 }
 

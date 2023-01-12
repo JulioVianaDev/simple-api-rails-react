@@ -1,6 +1,6 @@
 import Link from "../../Layout/Link"
 
-export function Navbar(){
+export function Navbar(props){
 
   return(
     <>

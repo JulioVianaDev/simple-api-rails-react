@@ -46,12 +46,12 @@ function App() {
       <br></br>
 
       {isOpen && (
-        <div className='modal-overlay'><Modal isOpen={isOpen} setIsOpen={setIsOpen} item={currentItem}/></div>
+        <div className='Modal-overlay'><Modal isOpen={isOpen} setIsOpen={setIsOpen} item={currentItem}/></div>
       )}
-      <div className='pedidos'>
-        {pedidos.map(pedido=>
-            <Pedido key={pedido.id} pedido={pedido} ItemEscolhido={ItemEscolhido}/>
-        )}
+      <div className="pedidos">
+          {pedidos.map(
+            pedido=><Pedido key={pedido.id} pedido={pedido} ItemEscolhido={ItemEscolhido}/>
+          )}
       </div>
     </div>
   );
